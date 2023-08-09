@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 	<title>...</title>
 </head>
@@ -27,19 +27,19 @@
             <nav class="nav">
                <ul class="nav__list">
                   <li>
-                     <a href="#">Dienstleistungen</a>
+                     <a href="#servises">Dienstleistungen</a>
                   </li>
                   <li>
-                     <a href="#">Arbeitsschritte</a>
+                     <a href="#blocks">Arbeitsschritte</a>
                   </li>
                   <li>
-                     <a href="#">Kundenbewertungen</a>
+                     <a href="#keramik">Kundenbewertungen</a>
                   </li>
                   <li>
-                     <a href="#">Portfolio</a>
+                     <a href="#portfolio">Portfolio</a>
                   </li>
                   <li>
-                     <a href="#">Kontakt</a>
+                     <a href="#form">Kontakt</a>
                   </li>
                </ul>
                <!-- social -->
@@ -88,7 +88,7 @@
       <!-- main content -->
       <main class="main">
 
-         <section class="hero">
+         <section class="hero" id="hero">
    <img class="banner" src="img/banner.jpg" alt="">
    <div class="container">
       
@@ -100,14 +100,14 @@
 
          <div class="main-btn">
             <div class="main-btn__wrapper">
-               <a href="#" class="main-btn__link">Anfrage hinterlassen</a>
+               <a href="#popup-form" class="main-btn__link popup-link">Anfrage hinterlassen</a>
             </div>
          </div>
       </div>
 
    </div>
 </section>
-         <section class="section-services">
+         <section class="section-services" id="servises">
    <div class="container">
 
       <div class="services-body">
@@ -291,7 +291,7 @@
       </div>
    </div>
 </section>
-         <section class="section-keramik">
+         <section class="section-keramik" id="keramik">
    <div class="keramik">
       <div class="keramik__content">
          <div class="keramik__container">
@@ -431,14 +431,14 @@
       </div>
    </div>
 </section>
-         <section class="section-blocks">
+         <section class="section-blocks" id="blocks">
    <div class="container">
 
       <h2 class="services__header-text">So läuft die Badsanierung ab:</h2>
 
       <div class="blocks">
-         <div class="block">
-            <div class="block__wrapper">
+         <div class="block anim-items">
+            <div class="block__wrapper block__wrapper_item1">
                <div class="block__image">
                   <img src="img/blocks/image 23.jpg" alt="">
                </div>
@@ -456,8 +456,8 @@
             </div>
          </div>
 
-         <div class="block">
-            <div class="block__wrapper">
+         <div class="block anim-items">
+            <div class="block__wrapper block__wrapper_item2">
                <div class="block__image">
                   <img src="img/blocks/image 24.jpg" alt="">
                </div>
@@ -474,8 +474,8 @@
             </div>
          </div>
 
-         <div class="block">
-            <div class="block__wrapper">
+         <div class="block anim-items">
+            <div class="block__wrapper block__wrapper_item3">
                <div class="block__image">
                   <img src="img/blocks/image 25.jpg" alt="">
                </div>
@@ -496,8 +496,8 @@
 
    </div>
 </section>
-         <section class="section-belt">
-   <div class="left">
+         <section class="section-belt" id="belt">
+   <div class="left anim-items">
       <img src="img/keramik-img.jpg" alt="">
    </div>
    <div class="container">
@@ -536,11 +536,11 @@
 
       </div>
    </div>
-   <div class="right">
+   <div class="right anim-items">
       <img src="img/keramik-img.jpg" alt="">
    </div>
 </section>
-         <section class="section-video">
+         <section class="section-video" id="portfolio">
 
    <div class="container">
       <h2 class="services__header-text">Beispiele unserer Arbeit</h2>
@@ -627,197 +627,199 @@
             </div>
          </div>
 
-         <div class="foto-slider swiper-content">
-            <div class="foto-slider__wrapper swiper-wrapper">
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+         <div class="foto-gallery">
+            <div class="foto-slider swiper-content">
+               <div class="foto-slider__wrapper swiper-wrapper">
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
 
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="foto-slider__slide swiper-slide">
+                     <div class="foto-slider__content">
+                        <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
+                        <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
+                        <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
+
+                        <div class="foto-slider__img">
+                           <img src="img/foto-poster.jpg" alt="">
+                        </div>
                      </div>
                   </div>
                </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="foto-slider__slide swiper-slide">
-                  <div class="foto-slider__content">
-                     <div class="foto-slider__text foto-slider__text_text-top">Standart-Bad</div>
-                     <div class="foto-slider__text foto-slider__text_text-right">Munchen</div>
-                     <div class="foto-slider__text foto-slider__text_bottom">10 m<span>2</span></div>
-
-                     <div class="foto-slider__img">
-                        <img src="img/foto-poster.jpg" alt="">
-                     </div>
-                  </div>
-               </div>
+               <!-- pagination -->
+               <div class="swiper-pagination foto-pagination"></div>
             </div>
-            <!-- pagination -->
-            <div class="swiper-pagination foto-pagination"></div>
          </div>
 
       </div>
    </div>
 
 </section>
-         <section class="section-reviews">
+         <section class="section-reviews" id="reviews">
    <div class="container">
 
       <div class="reviews-head">
@@ -843,11 +845,47 @@
             </div>
 
          </div>
+
+         <!-- slider swiper -->
+         <div class="reviews-slider swiper-content">
+            <div class="reviews-slider__wrapper swiper-wrapper">
+
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__content">
+                       <img src="img/review-1.jpg" alt="">
+                  </div>             
+               </div>
+
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__content">
+                       <img src="img/review-2.jpg" alt="">
+                  </div>             
+               </div>
+
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__content">
+                       <img src="img/review-3.jpg" alt="">
+                  </div>             
+               </div>
+
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__content">
+                       <img src="img/review-4.jpg" alt="">
+                  </div>             
+               </div>
+
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__content">
+                       <img src="img/review-1.jpg" alt="">
+                  </div>             
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 
 </section>
-         <section class="section-partners">
+         <section class="section-partners" id="partners">
    <div class="container">
       <div class="partners-header">
          <h2 class="services__header-text">Wir arbeiten mit</h2>
@@ -874,10 +912,10 @@
    </div>
 
 </section>
-         <section class="bluerow">
+         <section class="bluerow" id="bluerow">
    <div class="container">
 
-      <div class="bluerow-content">
+      <div class="bluerow-content anim-items">
          <div class="bluerow-content__body">
             <div class="bluerow-content__title">Haben Sie eine Frage?</div>
             <div class="bluerow-content__subtitle">Получите бесплатную консультацию от наших опытных специалистов</div>
@@ -896,20 +934,337 @@
 
    </div>
 </section>
+         <section class="section-team" id="team">
+   <div class="container">
+
+      <div class="team">
+         <h2 class="services__header-text">Unser Professionelles Team</h2>
+      </div>
+
+      <div class="team-body">
+         <div class="team-body__header">
+            <div class="team-body__header-title">Team</div>
+         </div>
+         <div class="team-body__container">
+            <!-- <div class="team-body__wrapper-items"> -->
+            <div class="team-body__item-body anim-items box-1">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">
+                     Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte im
+                     Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-2">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">
+                     Maler, Stuckateur, Fliesenleger. Ständig besser werden ist das Motto im
+                     Leben
+                  </div>
+               </div>
+            </div>
+
+            <div class="main-worker box-3 anim-items">
+               <div class="main-worker__item">
+                  <div class="main-worker__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="main-worker__text-body">
+                     <div class="main-worker__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein
+                        Experte
+                        im Verlegen großformatiger Fliesen ist
+                     </div>
+                     <div class="main-worker__title">Anton</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-4">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">
+                     Architektin. 3D-Visualisierer
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-5">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-6">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-7">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-8">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-9">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-10">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-11">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+
+            <div class="team-body__item-body anim-items box-12">
+               <div class="team-body__item">
+                  <div class="team-body__img">
+                     <img src="img/worker.jpg" alt="">
+                  </div>
+                  <div class="team-body__title">Anton</div>
+                  <div class="team-body__text">Professioneller Fliesenleger. Antons Vorteil ist, dass er ein Experte
+                     im Verlegen großformatiger Fliesen ist
+                  </div>
+               </div>
+            </div>
+            <!-- </div> -->
+         </div>
+      </div>
+
+   </div>
+</section>
+         <section class="section-form" id="form">
+   <div class="container">
+
+      <div class="form-title">
+         <h3 class="form-title__title">Kontaktieren Sie uns</h3>
+      </div>
+
+      <!-- Form -->
+      <form action="#" method="post" class="form">
+         <div class="form__wrapper">
+            <!-- form input -->
+            <div class="form__label-block">
+               <input type="text" name="name" class="form__input" placeholder="Name, Vorname *">
+            </div>
+
+            <div class="form__label-block">
+               <input type="tel" name="name" class="form__input" placeholder="Telefon *">
+            </div>
+
+            <div class="form__label-block">
+               <input type="text" name="name" class="form__input" placeholder="Nachricht">
+            </div>
+
+            <div class="button">
+               <button class="button__link">Absenden</button>
+            </div>
+         </div>
+         <!-- checkbox -->
+         <div data-da=".form__wrapper,960,3" class="checkbox">
+            <input id="checkboxMain" type="checkbox" class="checkbox__input">
+            <label for="#checkboxMain" class="checkbox__label">Hiermit bestätige ich die Datenschutzbestimmungen gelesen zu haben und
+               stimme ihnen zu
+            </label>
+         </div>
+      </form>
+
+   </div>
+</section>
 
       </main>
 
       <!-- footer -->
       <footer class="footer">
-	<div class="container">
+   <div class="container">
 
-		
+      <div class="footer-content">
+         <div class="footer-content__wrapper">
+            <div class="footer-content__column">
+               <div class="footer-content__logo">
+                  <img src="img/svg/footer-logo.svg" alt="">
+               </div>
 
-	</div>
-</footer>
+            </div>
+            <div data-da=".footer-content,960,0" class="footer-content__column footer-content__column_contacts">
+               <div class="footer-content__contacts">
+                  <div class="footer-content__item footer-content__item_phone">
+                     <div class="footer-content__icon">
+                        <img src="img/svg/phone.svg" alt="">
+                     </div>
+                     <div class="footer-content__text">+49 176 248-32-072</div>
+                  </div>
+
+                  <div class="footer-content__item">
+                     <div class="footer-content__icon">
+                        <img src="img/svg/mail.svg" alt="">
+                     </div>
+                     <div class="footer-content__text">dimitri.resch@outlook.com</div>
+                  </div>
+
+                  <div class="footer-content__item">
+                     <div class="footer-content__icon">
+                        <img src="img/svg/location.svg" alt="">
+                     </div>
+                     <div class="footer-content__text">Hinterbärenbadstraße 73, 81373 München</div>
+                  </div>
+
+               </div>
+
+            </div>
+            <div class="footer-content__column">
+               <!-- social -->
+               <div class="social">
+                  <a href="#" class="social__item">
+                     <svg class="social__svg" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="social__item">
+                     <svg class="social__svg" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="social__item">
+                     <svg class="social__svg" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                     </svg>
+                  </a>
+               </div>
+
+               <div class="footer-content__links">
+                  <a href="#" class="footer-content__link">Impressum</a>
+                  <a href="#" class="footer-content__link">Datenschutz</a>
+               </div>
+
+               <div class="footer-content__copyright">© 2023 Resch Wärmepumpen GmbH</div>
+
+            </div>
+         </div>
+      </div>
 
    </div>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</footer>
+
+      <!-- popup callback -->
+<div class="popup-wrapper contact" id="popup-form">
+   <div class="popup-wrapper__container contact__container">
+
+      <div class="popup popup-body">
+         <div class="popup-body__content">
+
+            <!-- <div class="popup-body__close"> -->
+               <a href="#header" class="close-popup"></a>
+            <!-- </div> -->
+
+            <div class="popup-body__header">Оставить заявку</div>
+            <!-- Form -->
+            <form action="#" method="post" class="popup-form">
+
+               <!-- form input -->
+               <div class="popup-form__label-block">
+                  <input type="text" name="name" class="popup-form__input" placeholder="Name, Vorname *">
+               </div>
+               <div class="popup-form__label-block">
+                  <input type="text" name="name" class="popup-form__input" placeholder="Telefon *">
+               </div>
+               <div class="popup-form__label-block">
+                  <input type="text" name="name" class="popup-form__input" placeholder="Nachricht">
+               </div>
+
+               <!-- checkbox -->
+               <div class="checkbox">
+                  <input id="checkboxForm" type="checkbox" class="checkbox__input">
+                  <label for="#checkboxForm" class="checkbox__label">
+                     Hiermit bestätige ich die Datenschutzbestimmungen
+                     gelesen zu haben und
+                     stimme ihnen zu
+                  </label>
+               </div>
+
+               <!-- button -->
+               <div class="popup-button">
+                  <button aria-label="" type="" class="popup-button__link">Кнопка</button>
+               </div>
+               <!-- button - end -->
+            </form>
+            <!-- Form - end -->
+
+         </div>
+      </div>
+   </div>
+</div>
+
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/app.min.js"></script>
 </body>
 
